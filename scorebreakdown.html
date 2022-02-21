@@ -1,0 +1,16 @@
+<html>
+<body>
+	{{ range $i, $user := .Scoreboard.Users }}
+	<table>
+	<tbody>
+	<tr><th>{{$user.Name}}</th></tr>
+	<tr><th>Description</th><th>Points</th></tr>
+		{{ range $i, $flag := $user.Flags }}
+		<tr><td>{{$flag.Desc}}</td><td>{{$flag.Pts}}</td></tr>
+		{{ end }}
+		<tr><td></td><td>--</td></tr>
+		<tr><td>Total</td><td>{{$user.Pts}}</td></tr>
+	</tbody>
+	</table>
+	{{ end }}
+</body>

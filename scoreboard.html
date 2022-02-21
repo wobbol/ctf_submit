@@ -1,0 +1,21 @@
+<html>
+<head>
+<style>
+html {color: white;}
+.scoreboard, table  {border-collapse:collapse;border-spacing:0;margin:1em}
+.scorerow, td, th{border-style:solid;border-width:1px;;border-color:white;color:white;}
+body {background:black;}
+</style>
+</head>
+<body>
+	<table>
+	<tbody>
+		<tr><th>Scoreboard</th></tr>
+		<tr><th>Username</th><th>Points</th></tr>
+		{{ range $i, $user := .Scoreboard.Users }}
+		<tr><td>{{$user.Name}}</td><td>{{$user.Pts}}</td></tr>
+		{{ end }}
+	</tbody>
+	</table>
+</body>
+</html>

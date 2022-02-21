@@ -1,0 +1,24 @@
+{
+	"Flags": [
+		{
+			"Data": "aflag",
+			"Desc": "example Flag1",
+			"Pts": 10
+		},
+		{
+			"Data": "bflag",
+			"Desc": "example Flag2",
+			"Pts": 10
+		},
+		{
+			"Data": "cflag",
+			"Desc": "example Flag3",
+			"Pts": 10
+		},
+		{
+			"Data": "dflag",
+			"Desc": "",
+			"Pts": 10
+		}
+	]
+}

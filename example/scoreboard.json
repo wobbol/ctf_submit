@@ -1,0 +1,20 @@
+{
+	"Users": [
+		{
+			"Name": "aardvark",
+			"Flags": [
+				{
+					"Data": "aflag",
+					"Desc": "example Flag1",
+					"Pts": 10
+				}
+			],
+			"Pts": 10
+		},
+		{
+			"Name": "apple",
+			"Flags": null,
+			"Pts": 0
+		}
+	]
+}

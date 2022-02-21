@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+	<table class="scoreboard">
+	<tbody>
+	<tr><th>Flags</th></tr>
+	<tr><th>Description</th><th>Points</th></tr>
+	{{ range $i, $flag := .Flagboard.Flags }}
+	<tr><td>{{$flag.Desc}}</td><td>{{$flag.Pts}}</td></tr>
+	{{ end }}
+	</tbody>
+	</table>
+</body>
